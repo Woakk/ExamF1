@@ -1,0 +1,18 @@
+#entete {
+	background-image: url(../images/banner.png);
+	text-align: center;
+	padding: 1.2%;
+	font-size: 24px;
+	text-shadow: 1px 1px 2px red;
+	font-family: Georgia, serif; /* On change la police du texte dans l'en-tête */
+}
+
+form {
+	border-style: solid;
+	border-color: black;
+	padding: 20px
+}
+
+div {
+	display: block;
+}
