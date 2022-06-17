@@ -1,0 +1,22 @@
+//BUT : Permettre à un ou deux joueurs de faire une partie d'Othello
+//ENTREE : Des valeurs, entrées par les joueurs, qui seront les coordonnées
+//Sortie : Une partie d'Othello, avec un vainqueur à l'issue
+
+CONST TAILLE <- 8
+
+VAR : s_j1, s_j2, s_bot : CHAINES DE CARACTERES
+	  t_plato[TAILLE,TAILLE] : TABLEAU DE CARACTERES
+	  n_nbtours, n_blanc, n_noir, n_cptpions 	: ENTIERS
+	  passe : BOOLEEN
+
+DEBUT
+	PROCEDURE AfficheMenu(n_menu : ENTIER)
+		PROCEDURE SetupPlateau(t_plato, n_blanc, n_noir)
+		PROCEDURE SelectJoueur(s_j1, s_j2, s_bot)
+			PROCEDURE BoucleJeu(n_nbtours)
+				PROCEDURE PlacementN(n_x, n_y, n_noir, passe)
+				PROCEDURE PlacementB(n_x, n_y, n_blanc, passe)
+				PROCEDURE FinTour(n_noir, n_blanc, n_cptpions)
+			PROCEDURE FinPartie(n_cptpions, n_noir, n_blanc)
+	PROCEDURE EcranFin(n_fin : ENTIER)
+FIN
